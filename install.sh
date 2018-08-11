@@ -12,7 +12,7 @@ apt-get -y upgrade
 if command -v steamcmd > /dev/null 2>&1;then
     echo "You have not installed SteamCMD"
     funInstallSteamCMD()
-fi  
+fi
 echo "Now you have installed SteamCMD, start to install Insurgency."
 mkdir ~/SteamServer && cd ~/SteamServer
 steamcmd +login anonymous +force_install_dir ./Insurgency2 +app_update 222880 +quit
