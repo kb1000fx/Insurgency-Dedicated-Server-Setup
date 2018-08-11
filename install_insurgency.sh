@@ -16,7 +16,7 @@ if [ ! command -v steamcmd > /dev/null 2>&1 ] && [ ! -f "steamcmd.sh" ];then
 fi
 echo "Now you have installed SteamCMD, start to install Insurgency."
 mkdir ~/SteamServer && cd ~/SteamServer
-steamcmd +login anonymous +force_install_dir ./Insurgency2 +app_update 222880 +quit
+./steamcmd.sh +login anonymous +force_install_dir ./Insurgency2 +app_update 222880 +quit
 
 function funInstallSteamCMD()
 {
