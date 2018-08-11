@@ -34,7 +34,7 @@ else
 	funInstallSteamCMD
 fi
 echo "Now you have installed SteamCMD, start to install Insurgency."
-./steamcmd.sh +login anonymous +force_install_dir ./Insurgency2 +app_update 222880 +quit
+./steamcmd.sh +login anonymous +force_install_dir ./Insurgency2 +app_update 237410 validate +quit
 
 
 
