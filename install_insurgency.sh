@@ -9,7 +9,8 @@ fi
 echo "Updating package list..."
 apt-get -y update
 apt-get -y upgrade
-if command -v steamcmd > /dev/null 2>&1;then
+clear
+if [ ! command -v steamcmd > /dev/null 2>&1 ] && [ ! -f "steamcmd.sh" ];then
     echo "You have not installed SteamCMD"
     funInstallSteamCMD
 fi
@@ -29,6 +30,7 @@ function funInstallSteamCMD()
     wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz --no-check-certificate
     tar zxvf steamcmd_linux.tar.gz
     chmod +x ./steamcmd.sh
+    clear
     return 0
 }
 
