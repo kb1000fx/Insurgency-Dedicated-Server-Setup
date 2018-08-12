@@ -35,6 +35,10 @@ else
 fi
 echo "Now you have installed SteamCMD, start to install Insurgency."
 ./steamcmd.sh +login anonymous +force_install_dir ./Insurgency2 +app_update 237410 validate +quit
+cd ./Insurgency2/insurgency/cfg
+wget https://raw.githubusercontent.com/kb1000fx/Insurgency-Dedicated-Server-Setup/master/res/server.cfg --no-check-certificate
+echo -e "\033[32m INFO: Installed successfully! Press any key to exit \033[0m"
+read
 
 
 
